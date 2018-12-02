@@ -40,7 +40,13 @@ timer_mgr:update(t1 + num)
 assert(timer_mgr:timer_num() == 0)
 
 local t2 = Utils.millisecond()
+
 collectgarbage("collect")
 local m2 = collectgarbage("count")
 
 print(strfmt("proc %d timer use: %dms(time) free: %0.3fM(memory)", num, t2-t1, (m1-m2)/1024))
+
+timer_mgr = nil
+collectgarbage("collect")
+local m3 = collectgarbage("count")
+print(strfmt("release timer mgr free: %0.3fM(memory)", (m2-m3)/1024))
