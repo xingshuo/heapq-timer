@@ -1,7 +1,7 @@
 ## HeapqTimer
 
-* Algorithm Description
-link the same touch interval timernode to one unidirectional list and push the head node into min heap queue
+* Algorithm Description:<br>
+Link the same touch interval timernode to one unidirectional list and push the head node into min heap queue
 
 * API Description:
 ```
