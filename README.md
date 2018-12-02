@@ -20,7 +20,7 @@ TimerMgr:update( cur_time )  --check all timer nodes whether wakeup at cur_time(
 make -C dep/
 ```
 
-##Test:
+## Test:
 ```
 lua test.lua  --functional testing
 lua benchtest.lua  --performance testing
