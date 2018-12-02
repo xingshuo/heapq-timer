@@ -15,6 +15,11 @@ TimerMgr:min_wakeup_spacing()  --get the interval between get_time() time and th
 TimerMgr:update( cur_time )  --check all timer nodes whether wakeup at cur_time(default value is get_time())
 ```
 
+## PreEnv
+```
+lua5.3
+```
+
 ## Build(linux):
 ```
 make -C dep/
